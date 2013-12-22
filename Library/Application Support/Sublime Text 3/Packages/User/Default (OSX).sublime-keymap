@@ -1,0 +1,7 @@
+[
+  { "keys": ["super+f"], "command": "show_panel", "args": {"panel": "replace", "reverse": false} },
+  { "keys": ["super+alt+down"], "command": "duplicate_line" },
+  { "keys": ["super+shift+d"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"} },
+  { "keys": ["alt+up"], "command": "swap_line_up" },
+  { "keys": ["alt+down"], "command": "swap_line_down" }
+]

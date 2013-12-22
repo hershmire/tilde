@@ -1,0 +1,8 @@
+class <%= klass %>::Cli < Thor
+  # http://whatisthor.com/
+
+  desc 'hello NAME', 'say hello to NAME'
+  def hello name
+    puts "Hello #{name}"
+  end
+end

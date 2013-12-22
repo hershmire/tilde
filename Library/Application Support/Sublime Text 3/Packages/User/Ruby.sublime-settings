@@ -1,0 +1,10 @@
+{
+	"extensions":
+	[
+    "Gemfile",
+    "Guardfile",
+    "pp",
+    "Puppetfile",
+    "Rakefile"
+	]
+}

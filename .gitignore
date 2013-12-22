@@ -1,0 +1,38 @@
+# ignore everything in root
+/*
+
+# ==================== #
+# nested inclues
+# - Step through each directory
+# !DontIgnoreDirectory
+# IgnoreEverythingInDirectory/*
+# repeat...
+# ==================== #
+!Library
+Library/*
+
+!Library/Application Support
+Library/Application Support/*
+!Library/Application Support/Sublime Text 3
+Library/Application Support/Sublime Text 3/*
+!Library/Application Support/Sublime Text 3/Packages
+Library/Application Support/Sublime Text 3/Packages/*
+!Library/Application Support/Sublime Text 3/Packages/User
+Library/Application Support/Sublime Text 3/Packages/User/Package Control*
+
+!Library/Preferences
+Library/Preferences/*
+!Library/Preferences/com.googlecode.iterm2.plist
+# ==================== #
+
+# root level includes
+!.hoe_template
+!.bash_profile
+!.bashrc
+!.commonrc
+!.gemrc
+!.gitconfig
+!.gitignore
+!.powconfig
+!.railsrc
+!.zshrc

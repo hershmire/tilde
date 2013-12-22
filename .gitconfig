@@ -1,0 +1,7 @@
+[user]
+	name = Ryan Brewster
+	email = brewster1134@gmail.com
+[mergetool]
+	keepBackup = true
+[credential]
+	helper = osxkeychain

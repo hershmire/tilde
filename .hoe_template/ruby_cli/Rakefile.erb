@@ -1,0 +1,18 @@
+# -*- ruby -*-
+
+require 'rubygems'
+require 'hoe'
+
+<%=
+  found = Gem.find_files('hoe/*.rb').map { |f| File.basename(f, '.rb').to_sym }
+  extra = found - Hoe.plugins - [:rake]
+  extra.map { |name| "# Hoe.plugin #{name.inspect}" }.sort.uniq.join("\n")
+%>
+
+Hoe.spec '<%= project %>' do
+  developer 'Ryan Brewster', 'brewster1134@gmail.com'
+  license 'MIT'
+  # self.group_name = '<%= project %>x' # if part of an organization/group
+end
+
+# vim: syntax=ruby

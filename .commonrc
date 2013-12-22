@@ -1,0 +1,42 @@
+# ALIASES
+alias l='ls -lAGh'
+alias md='mkdir -p'
+alias rd='rmdir -p'
+
+# PATH
+export PATH=/usr/local/bin
+export PATH=$PATH:/usr/local/munki
+export PATH=$PATH:/usr/X11/bin
+export PATH=$PATH:/usr/bin
+export PATH=$PATH:/usr/sbin
+export PATH=$PATH:/bin
+export PATH=$PATH:/sbin
+
+# EDITOR
+export EDITOR='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
+export BUNDLER_EDITOR=$EDITOR
+export GIT_EDITOR="$EDITOR -w"
+alias edit=$EDITOR
+
+# RBENV
+export RBENV_ROOT=/usr/local/var/rbenv
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
+# JAVA
+export JAVA_HOME=$(/usr/libexec/java_home -v1.7)
+
+# AUDI
+export AUDI_CQ_PATH=$HOME/Code/akqa/audi/cq
+
+# GIT
+function grb {
+  CUR_BRANCH=`git rev-parse --abbrev-ref HEAD`
+  HASH=`git merge-base master ${CUR_BRANCH}`
+  git rebase -i ${HASH}
+}
+
+# MVN
+export MAVEN_OPTS="-Xmx512m -XX:MaxPermSize=512m"
+
+# File Limit
+# ulimit -n 100000
